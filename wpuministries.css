@@ -1,0 +1,520 @@
+
+ /* Base Styles------- */
+*{
+  box-sizing:border-box;
+  margin:0;
+}
+
+
+body{
+  font-family: sans-serif;
+}
+
+img{
+  height: 500px;
+  border-radius: 10px;
+}
+
+a[target="_blank"] {
+  text-decoration: none;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+/* ---- Navigation ---- */
+
+.primaryimg{
+  width: 400px;
+  height: 120px;
+  margin-right: auto;
+}
+
+.nav-menu1,
+.nav-menu2,
+.text1 {
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+
+.nav-menu1{
+  font-weight: 200;
+  margin-top: 75px;
+}
+
+.nav-menu1 > a {
+    text-decoration: none;
+}
+
+.nav-menu1 > a:hover {
+  color: #FFDF00;
+}
+
+a > li {
+  font-size: 25px;
+  list-style: none;
+  display: inline-block;
+  padding-right: 75px;
+}
+
+.dropdown-p {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+  margin-right: 100px;
+  padding-bottom: 5px;
+  border-bottom: solid 2px white;
+  text-decoration: none;
+}
+
+/* ---- Dropdown Menu ---- */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000080;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: #FFDF00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* ---- Layout Containers ---- */
+
+.primary-header,
+.secondary-header{
+  display: flex;
+
+}
+
+ .primary-header{
+   border-bottom: 2px solid #d3d3d3;
+ }
+
+ .secondary-header{
+   background-color: #000080;
+   padding: 25px;
+   padding-right: 15px;
+   justify-content: space-around;
+ }
+
+ .banner {
+   height:600px;
+   background: linear-gradient( 80deg,#000080, transparent 60%),
+               red url('IMG_3327.jpg') no-repeat center / cover ;
+ }
+
+ .intro-container{
+   display:flex;
+   flex-direction: row;
+   padding: 50px;
+   margin-top:75px;
+   border-bottom: 2px solid #d3d3d3;
+ }
+
+ .event-box{
+   background-color: blue;
+   background: url('https://www.wmpenn.edu/wp-content/uploads/2016/12/alumni_hero.jpg') no-repeat center / cover;
+   border-bottom: 2px solid #d3d3d3;
+   margin-top: 50px;
+   margin-bottom: 150px;
+   padding-top: 150px;
+   border-radius: 10px;
+   margin: auto;
+   margin-top: 50px;
+   height: 500px;
+   width: 800px;
+
+ }
+
+ .main-footer{
+  background-color: #000080;
+  margin-top: 300px;
+  padding: 45px;
+ }
+
+ /* h1 > a {
+   color:white;
+ } */
+
+ /* ---- Page Elements ---- */
+
+
+ .banner-style {
+   width: 300px;
+   font-size: 50px;
+   font-weight: bolder;
+   color: #D3D3D3;
+   margin-left: 45px;
+   padding-top: 75px;
+ }
+
+ .intro{
+   font-size: 25px;
+   font-family: sans-serif;
+   margin-left: 75px;
+   width: 450px;
+   height: 300px;
+   flex: 1;
+ }
+
+ .introimg {
+   flex: 1;
+ }
+
+ .intro-header {
+     color: #FFDF00;
+ }
+
+.intro-p {
+    color: #000080;
+  }
+
+
+.event-title,
+.event-text{
+  text-align: center;
+  text-shadow: 0 5px 10px #000080;
+}
+
+.event-text{
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.button-style{
+  background-color: #000080;
+  color: #FFDF00 ;
+  display: block;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 20px;
+  width: 150px;
+}
+
+button > a {
+  color:white;
+}
+
+.footer-header{
+  text-align: center;
+  padding: 15px;
+}
+
+.contact-links{
+  text-align: center;
+
+}
+
+.contact-details {
+  color:#FFDF00;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.titleC {
+    color: #FFDF00;
+}
+
+.footer-img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px ;
+}
+
+
+a[href*="instagram"],
+a[href*="facebook"] {
+  text-decoration: none;
+  color: #808080;
+}
+ /* ---- Media Query ---- */
+
+ /*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  .primaryimg{
+    width: 400px;
+    height: 120px;
+    margin-right: 700px;
+  }
+  .nav-menu1{
+    display: inline-block;
+    font-size: 5px;
+    margin-top: 20px;
+  }
+
+  .intro{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-left: 75px;
+    width: 450px;
+    height: 300px;
+    flex: 2;
+  }
+
+
+  .introimg{
+    flex: 2;
+  }
+
+
+
+}
+
+ @media(max-width:1125px){
+
+   .primaryimg{
+     width: 400px;
+     height: 120px;
+     margin-right: 700px;
+   }
+   .nav-menu1{
+     display: inline-block;
+     font-size: 5px;
+     margin-top: 20px;
+   }
+
+   .intro{
+     font-size: 30px;
+     font-family: sans-serif;
+     margin-left: 75px;
+     width: 450px;
+     height: 300px;
+     flex: 2;
+   }
+
+   .introimg{
+     flex: 2;
+   }
+
+
+
+   }
+
+   /*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+   @media (min-width: 1025px) and (max-width: 1280px) {
+
+     .primaryimg{
+       width: 400px;
+       height: 120px;
+       margin-right: 500px;
+     }
+     .nav-menu1{
+       display: inline-block;
+       font-size: 5px;
+       margin-top: 20px;
+     }
+
+     .intro{
+       font-size: 25px;
+       font-family: sans-serif;
+       margin-left: 75px;
+       width: 450px;
+       height: 300px;
+       flex: 1;
+     }
+
+     .introimg{
+       flex: 1;
+
+     }
+
+
+  }
+
+  /*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+   @media (min-width: 768px) and (max-width: 1024px) {
+     html,
+     body{
+       width:100%;
+       overflow-x:hidden;
+     }
+
+     .primaryimg{
+       width: 400px;
+       height: 120px;
+       margin-right: 400px;
+     }
+
+     .introimg{
+       display: none;
+     }
+
+     .nav-menu1{
+       display: inline-block;
+       font-size: 5px;
+       margin-top: 20px;
+     }
+
+   /*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+  }
+
+   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+     html,
+     body{
+       width:100%;
+       overflow-x:hidden;
+     }
+
+     .primaryimg{
+       width: 400px;
+       height: 120px;
+       margin-right: 400px;
+     }
+
+     .introimg{
+       display: none;
+     }
+
+     .nav-menu1{
+       display: inline-block;
+       font-size: 5px;
+       margin-top: 20px;
+     }
+
+  }
+
+  /*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+   @media (min-width: 481px) and (max-width: 767px) {
+
+     html,
+     body{
+       width:100%;
+       overflow-x:hidden;
+     }
+
+     .primaryimg{
+       width: 400px;
+       height: 120px;
+       margin-right: 400px;
+     }
+
+     .introimg{
+       display: none;
+     }
+
+     .nav-menu1{
+       display: inline-block;
+       font-size: 50px;
+       margin-top: 20px;
+     }
+
+     .event-box{
+       height: 800px;
+       width: 1000px;
+     }
+
+   }
+
+   /*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+   @media only screen
+   and (min-device-width: 375px)
+   and (max-device-width: 480px)
+   and (-webkit-min-device-pixel-ratio: 3) {
+
+     html,
+     body{
+       width:100%;
+       overflow-x:hidden;
+     }
+
+     .primaryimg{
+       width: 400px;
+       height: 120px;
+       margin-right: 400px;
+     }
+
+     .introimg{
+       display: none;
+     }
+
+     .nav-menu1{
+       display: block;
+       font-size: 5px;
+       margin-top: 20px;
+     }
+
+     .dropdown-p{
+       font-size: 45px;
+     }
+
+
+     }
+
+     @media only screen and (max-width: 768px){
+    html,
+    body{
+    width:100%;
+    overflow-x:hidden;
+    }
+
+    .primaryimg{
+      width: 400px;
+      height: 120px;
+      margin-right: 400px;
+    }
+
+    .introimg{
+      display: none;
+    }
+
+    .nav-menu1{
+      display: block;
+      font-size: 5px;
+      margin-top: 20px;
+    }
+}

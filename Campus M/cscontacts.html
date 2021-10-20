@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>CM Contacts</title>
+  <link rel= "stylesheet" href="linkcss.css">
+
+  </head>
+
+  <body>
+    <header class="primaryheader">
+      <img alt="minitrylogo" src="http://wpucampusministry.com/wpu%20m.jpg" class="daimg">
+    </header>
+    <main></main>
+
+    <script >
+    const Members = [
+      {name: 'Randall Nichols', email: 'Randall.Nichols@wmpenn.edu'},
+      {name: 'Tom Palmer', email: 'tapalmer@hotmail.com'},
+      {name: 'Julia Flaherty' , email: 'Julia.Flaherty@intervarsity.org'},
+      {name: 'Enoch Okyere', email: 'Okyeree@wmpenn.edu'},
+      {name: 'Jacob Taylor', email: 'JacobTaylor@wmpenn.edu'},
+      {name: 'Daniel Thatcher',email: 'DanielThatcher@wmpenn.edu'}
+    ];
+
+      let html = '';
+      let main = document.querySelector('main');
+      for (let i = 0; i < Members.length; i++) {
+        let memArray = Members[i];
+        html += `<h1>${memArray.name}</h1>
+                <h2>${memArray.email}</h2> `;
+      }
+
+      main.innerHTML = html;
+    </script>
+
+
+    </div>
+
+  </div>
+
+  </body>
+
+
+
+</html>

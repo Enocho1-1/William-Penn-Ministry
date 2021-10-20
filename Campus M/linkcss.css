@@ -1,0 +1,124 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  font-size: 1.25em ;
+  color: #4935fc;
+}
+
+h1,
+h2,
+p{
+    text-align: center;
+}
+
+
+h1,
+p {
+  color:#fcea27;
+}
+
+h1{
+  font-size: 40px;
+  text-shadow:4px 4px black;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Layout Containers ---- */
+
+.min-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+
+}
+
+.primaryheader{
+  padding: 5px;
+  border-bottom: 2px solid #d3d3d3;;
+}
+
+.banner1{
+  height:400px;
+  background: linear-gradient( 80deg,#000080, transparent 60%),
+              red url('IMG_3342.jpg') no-repeat center / cover ;
+}
+
+.banner2{
+  height:400px;
+  background: linear-gradient( 80deg,#000080, transparent 60%),
+              red url('https://i.swncdn.com/media/800w/cms/CW/faith/47910-church-fellowship-1200.1200w.tn.jpg') no-repeat center / cover ;
+}
+
+/* ---- Page Elements ---- */
+
+.daimg{
+  width: 400px;
+  height: 120px;
+}
+
+.title {
+  text-align: center;
+  text-shadow: 4px 4px black;
+}
+.miniName{
+  font-size: 75px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 100px;
+  text-shadow: 4px 4px black;
+
+}
+
+.infobox{
+  margin: 10px;
+  background: blue;
+  padding: 10px 15px;
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 5px 5px black;
+}
+
+.col {
+  padding: 5px;
+  margin: 5px;
+  background-color: #020566;
+  border-radius: 5px;
+}
+
+.item1 {
+  background-image: url('cmimg/noh1.jpg');
+  background-size: 325px;
+  background-repeat: no-repeat;
+}
+
+.item3 {
+  background-image: url('cmimg/sme.jpg');
+  background-size: 325px;
+  background-repeat: no-repeat;
+}
+
+.ig-logo {
+  width: 3.125rem;
+  height: 3.125rem;
+}
